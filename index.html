@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI 2</title>
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section id="bmi">
+        <div class="container">
+            <div class="bmi">
+                <div class="inp inp1">
+                    <div class="age inp_top">
+                        <small class="small small1">Age [in years]</small>
+                        <h1 class="input_top_display age_display"">1</h1>
+                        <div class="crement_icon">
+                            <div class="minus">
+                                <i class="fa-solid fa-minus iconize age_minus" onclick="pilus('age','minus')"></i>
+                            </div>
+                            <div class="plus">
+                                <i class="fa-solid fa-plus iconize age_plus" onclick="pilus('age','plus')"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="weight inp_top">
+                        <small class="small small2">Weight [kg]</small>
+                        <h1 class=" input_top_display weight_display">1</h1>
+                        <div class="crement_icon">
+                            <div class="minus">
+                                <i class="fa-solid fa-minus iconize weight_minus" onclick="pilus('weight','minus')"></i>
+                            </div>
+                            <div class="plus">
+                                <i class="fa-solid fa-plus iconize weight_plus" onclick="pilus('weight','plus')">0</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="inp inp2">
+                    <div class="height">
+                        <div class="smal_div">
+                            <small class="height_small">Height [cm] </small>
+                        </div>
+                        <div class="range">
+                            <span class="range_span">0</span>
+                            <input type="range" name="range" value="100" min="0" max="500" step="1" id="range_slider" oninput="fire()">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="inp inp3">
+                    <div class="gender">
+                        <div class="smal_div">
+                            <small class="height_small">Gender</small>
+                        </div>
+                        <div class="gender_tik">
+                            <h1 class="im">I'm</h1>
+                            <p class="female">Female</p>
+                            <input type="checkbox" name="gender" id="gender">
+                            <p class="male">Male</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="result">
+                    <p class="presult"></p>
+                </div>
+                <div class="but">
+                    <button id="button" onclick="pilus('nothing','nothing')">CALCULATE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <script src="./all.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
